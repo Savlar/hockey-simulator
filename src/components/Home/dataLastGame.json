@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Attendance",
+    "number": "3450/3600",
+    "numberDifference": 258,
+    "icon": "PeopleIcon",
+    "iconDifference": "ArrowUpwardIcon"
+  },
+  {
+    "id": 2,
+    "name": "Morale",
+    "number": "87/100",
+    "numberDifference": 5,
+    "icon": "InsertEmoticonIcon",
+    "iconDifference": "ArrowUpwardIcon"
+  },
+  {
+    "id": 3,
+    "name": "Energy",
+    "number": "93/100",
+    "numberDifference": -4,
+    "icon": "ElectricBoltIcon",
+    "iconDifference": "ArrowDownwardIcon"
+  },
+  {
+    "id": 4,
+    "name": "Management",
+    "number": "76/100",
+    "numberDifference": 6,
+    "icon": "WorkIcon",
+    "iconDifference": "ArrowUpwardIcon"
+  }
+]

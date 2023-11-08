@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "date": "15.11.2023",
+    "place": "V",
+    "placeInfo": "vonku",
+    "logo": "/images/logo-zvolen.png",
+    "name": "Zvolen",
+    "homeScore": "5",
+    "awayScore": "7",
+    "weWon": true
+  },
+  {
+    "id": 2,
+    "date": "31.10.2023",
+    "place": "V",
+    "placeInfo": "vonku",
+    "logo": "/images/logo-michalovce.png",
+    "name": "Michalovce",
+    "homeScore": "2",
+    "awayScore": "4",
+    "weWon": true
+  },
+  {
+    "id": 3,
+    "date": "29.10.2023",
+    "place": "D",
+    "placeInfo": "doma",
+    "logo": "/images/logo-mikulas.png",
+    "name": "L.Mikuláš",
+    "homeScore": "2",
+    "awayScore": "8",
+    "weWon": false
+  },
+  {
+    "id": 4,
+    "date": "27.10.2023",
+    "place": "V",
+    "placeInfo": "vonku",
+    "logo": "/images/logo-zamky.png",
+    "name": "N.Zámky",
+    "homeScore": "2",
+    "awayScore": "3PN",
+    "weWon": true
+  },
+  {
+    "id": 5,
+    "date": "22.10.2023",
+    "place": "V",
+    "placeInfo": "vonku",
+    "logo": "/images/logo-poprad.png",
+    "name": "Poprad",
+    "homeScore": "3",
+    "awayScore": "4PP",
+    "weWon": true
+  }
+]
