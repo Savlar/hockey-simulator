@@ -3,7 +3,8 @@ import Sidebar from './components/Sidebar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Box } from '@mui/material';
 import Home from './components/Home/Home';
-import Players from './components/Players';
+import Players from './components/Players/Players';
+import Inbox from './components/Inbox/Inbox';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/Home" element={<Home />}></Route>
             <Route path="/Players" element={<Players />}></Route>
+            <Route path="/Inbox" element={<Inbox />}></Route>
           </Routes>
         </Box>
       </BrowserRouter>

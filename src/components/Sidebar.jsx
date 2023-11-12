@@ -66,18 +66,20 @@ const Sidebar = () => {
         </List>
       </Link>
       {/* Pošta */}
-      <List>
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <Badge badgeContent={4} color="primary">
-                <EmailIcon />
-              </Badge>
-            </ListItemIcon>
-            <ListItemText primary="Pošta" />
-          </ListItemButton>
-        </ListItem>
-      </List>
+      <Link to="/Inbox" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <List>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <Badge badgeContent={4} color="primary">
+                  <EmailIcon />
+                </Badge>
+              </ListItemIcon>
+              <ListItemText primary="Pošta" />
+            </ListItemButton>
+          </ListItem>
+        </List>
+      </Link>
       {/* Kalendár */}
       <List>
         <ListItem disablePadding>

@@ -35,9 +35,10 @@ const LastGameOne = ({
       sx={{
         width: '100%',
         display: 'flex',
-        flexDirection: 'column',
+        flex: '1',
+        justifyContent: 'center',
+        alignItems: 'center',
         background: 'white',
-        height: '50px',
       }}
     >
       <Box sx={{ display: 'flex', flexGrow: '1' }}>
@@ -48,7 +49,7 @@ const LastGameOne = ({
             justifyContent: 'flex-start',
             alignItems: 'center',
             gap: '0.5em',
-            paddingLeft: '0.5em',
+            paddingLeft: '1.8em',
           }}
         >
           {icon &&
@@ -63,7 +64,7 @@ const LastGameOne = ({
             display: 'flex',
             justifyContent: 'flex-start',
             alignItems: 'center',
-            paddingLeft: '1em',
+            paddingLeft: '1.5em',
           }}
         >
           <Typography variant="body1">{number}</Typography>
@@ -75,7 +76,7 @@ const LastGameOne = ({
             justifyContent: 'flex-start',
             alignItems: 'center',
             gap: '0.2em',
-            paddingLeft: '0.5em',
+            paddingLeft: '1.7em',
           }}
         >
           <Typography variant="body1">{numberDifference}</Typography>

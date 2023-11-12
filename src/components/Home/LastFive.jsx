@@ -27,9 +27,19 @@ const LastFive = () => {
           Posledných 5
         </Typography>
       </Box>
-      {dataLastFive.map((oneMatch) => {
-        return <LastFiveOne key={oneMatch.id} {...oneMatch} />;
-      })}
+      <Box
+        sx={{
+          width: '100%',
+          height: '320px',
+          background: 'purple',
+          display: 'flex',
+          flexDirection: 'column',
+        }}
+      >
+        {dataLastFive.map((oneMatch) => {
+          return <LastFiveOne key={oneMatch.id} {...oneMatch} />;
+        })}
+      </Box>
     </Box>
   );
 };

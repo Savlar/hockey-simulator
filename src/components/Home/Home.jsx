@@ -19,7 +19,7 @@ const Home = () => {
         <Box
           sx={{
             display: 'grid',
-            gridTemplateColumns: ' 1fr 1fr 1fr',
+            gridTemplateColumns: ' 0.8fr 1fr 0.8fr',
             gridTemplateRows: 'auto auto',
             marginTop: '1em',
             gap: '1em',

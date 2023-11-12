@@ -27,9 +27,19 @@ const LastGame = () => {
           Minulý zápas
         </Typography>
       </Box>
-      {dataLastGame.map((oneInfo) => {
-        return <LastGameOne key={oneInfo.id} {...oneInfo} />;
-      })}
+      <Box
+        sx={{
+          width: '100%',
+          height: '320px',
+          background: 'purple',
+          display: 'flex',
+          flexDirection: 'column',
+        }}
+      >
+        {dataLastGame.map((oneInfo) => {
+          return <LastGameOne key={oneInfo.id} {...oneInfo} />;
+        })}
+      </Box>
     </Box>
   );
 };
