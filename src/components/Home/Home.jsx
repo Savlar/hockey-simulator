@@ -4,6 +4,8 @@ import Calendar from './Calendar';
 import LastFive from './LastFive';
 import LastGame from './LastGame';
 import Table from './Table';
+import NextGame from './NextGame';
+import News from './News';
 
 const Home = () => {
   return (
@@ -29,8 +31,12 @@ const Home = () => {
           <LastGame></LastGame>
           <LastFive></LastFive>
 
-          <Box sx={{ background: 'pink' }}>dsad</Box>
-          <Box sx={{ background: 'black' }}>dasd</Box>
+          <Box sx={{ background: 'pink' }}>
+            <News></News>
+          </Box>
+          <Box>
+            <NextGame></NextGame>
+          </Box>
           <Box sx={{ background: 'green' }}>
             <Table></Table>
           </Box>

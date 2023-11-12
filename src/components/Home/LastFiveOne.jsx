@@ -27,10 +27,14 @@ const LastFiveOne = ({
           textAlign: 'center',
         }}
       >
-        <Typography variant="body1">{date}</Typography>
+        <Typography variant="body1" sx={{ fontSize: '18px' }}>
+          {date}
+        </Typography>
       </Box>
-      <Box sx={{ width: '5%', textAlign: 'center' }}>
-        <Typography variant="body1">{place}</Typography>
+      <Box sx={{ width: '5%', textAlign: 'center', paddingLeft: '0.6em' }}>
+        <Typography variant="body1" sx={{ fontSize: '18px' }}>
+          {place}
+        </Typography>
       </Box>
       <Box
         sx={{
@@ -44,7 +48,7 @@ const LastFiveOne = ({
       >
         <Box
           sx={{
-            width: '22px',
+            width: '32px',
             height: 'auto',
             display: 'flex',
             justifyContent: 'center',
@@ -58,7 +62,9 @@ const LastFiveOne = ({
           ></img>
         </Box>
         <Box>
-          <Typography variant="body1">{name}</Typography>
+          <Typography variant="body1" sx={{ fontSize: '18px' }}>
+            {name}
+          </Typography>
         </Box>
       </Box>
       <Box
@@ -71,7 +77,7 @@ const LastFiveOne = ({
           paddingLeft: '20px',
         }}
       >
-        <Typography variant="body1">
+        <Typography variant="body1" sx={{ fontSize: '18px' }}>
           {homeScore}:{awayScore}
         </Typography>
         <FiberManualRecordIcon

@@ -6,6 +6,7 @@ import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
 import PeopleIcon from '@mui/icons-material/People';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import AccessibilityIcon from '@mui/icons-material/Accessibility';
 
 const icons = {
   ElectricBoltIcon,
@@ -14,6 +15,7 @@ const icons = {
   PeopleIcon,
   ArrowUpwardIcon,
   ArrowDownwardIcon,
+  AccessibilityIcon,
 };
 
 const LastGameOne = ({
@@ -48,15 +50,17 @@ const LastGameOne = ({
             display: 'flex',
             justifyContent: 'flex-start',
             alignItems: 'center',
-            gap: '0.5em',
-            paddingLeft: '1.8em',
+            gap: '0.8em',
+            paddingLeft: '1.5em',
           }}
         >
           {icon &&
             React.createElement(icons[icon], {
-              style: { color: 'black', fontSize: '28px' },
+              style: { color: '#1976D2', fontSize: '28px' },
             })}
-          <Typography variant="body1">{name}</Typography>
+          <Typography variant="body1" sx={{ fontSize: '20px' }}>
+            {name}
+          </Typography>
         </Box>
         <Box
           sx={{
@@ -64,10 +68,10 @@ const LastGameOne = ({
             display: 'flex',
             justifyContent: 'flex-start',
             alignItems: 'center',
-            paddingLeft: '1.5em',
+            paddingLeft: '3em',
           }}
         >
-          <Typography variant="body1">{number}</Typography>
+          <Typography variant="body1" sx={{ fontSize: '20px' }}>{number}</Typography>
         </Box>
         <Box
           sx={{
@@ -76,13 +80,13 @@ const LastGameOne = ({
             justifyContent: 'flex-start',
             alignItems: 'center',
             gap: '0.2em',
-            paddingLeft: '1.7em',
+            paddingLeft: '4em',
           }}
         >
-          <Typography variant="body1">{numberDifference}</Typography>
+          <Typography variant="body1" sx={{ fontSize: '20px' }}>{numberDifference}</Typography>
           {iconDifference &&
             React.createElement(icons[iconDifference], {
-              style: { color: iconColor, fontSize: '18px' },
+              style: { color: iconColor, fontSize: '20px' },
             })}
         </Box>
       </Box>
