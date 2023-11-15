@@ -13,7 +13,6 @@ const Home = () => {
       <Box
         sx={{
           bgcolor: '#cfe8fc',
-          height: '100vh',
           marginY: '1.5em',
         }}
       >
@@ -30,16 +29,9 @@ const Home = () => {
           <Calendar></Calendar>
           <LastGame></LastGame>
           <LastFive></LastFive>
-
-          <Box sx={{ background: 'pink' }}>
-            <News></News>
-          </Box>
-          <Box>
-            <NextGame></NextGame>
-          </Box>
-          <Box sx={{ background: 'green' }}>
-            <Table></Table>
-          </Box>
+          <News></News>
+          <Table></Table>
+          <NextGame></NextGame>
         </Box>
       </Box>
     </Box>

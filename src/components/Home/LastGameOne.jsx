@@ -71,7 +71,9 @@ const LastGameOne = ({
             paddingLeft: '3em',
           }}
         >
-          <Typography variant="body1" sx={{ fontSize: '20px' }}>{number}</Typography>
+          <Typography variant="body1" sx={{ fontSize: '20px' }}>
+            {number}
+          </Typography>
         </Box>
         <Box
           sx={{
@@ -83,7 +85,9 @@ const LastGameOne = ({
             paddingLeft: '4em',
           }}
         >
-          <Typography variant="body1" sx={{ fontSize: '20px' }}>{numberDifference}</Typography>
+          <Typography variant="body1" sx={{ fontSize: '20px' }}>
+            {numberDifference}
+          </Typography>
           {iconDifference &&
             React.createElement(icons[iconDifference], {
               style: { color: iconColor, fontSize: '20px' },

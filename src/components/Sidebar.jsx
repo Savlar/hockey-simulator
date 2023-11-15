@@ -175,7 +175,10 @@ const Sidebar = () => {
       </Collapse>
 
       {/* ZÁZEMIE */}
-      <Link to="/Výroky" style={{ textDecoration: 'none', color: 'inherit' }}>
+      <Link
+        to="/Facilities"
+        style={{ textDecoration: 'none', color: 'inherit' }}
+      >
         <List>
           <ListItem disablePadding>
             <ListItemButton component="a" href="#quotes">

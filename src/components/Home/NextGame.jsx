@@ -3,7 +3,7 @@ import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
 
 const NextGame = () => {
   return (
-    <Box>
+    <Box sx={{ background: 'green', display: 'flex', flexDirection: 'column' }}>
       <Box
         sx={{
           width: '100%',
@@ -19,13 +19,15 @@ const NextGame = () => {
           Nasledujúci zápas
         </Typography>
       </Box>
-      <Box sx={{ height: '200px', display: 'flex' }}>
+      <Box sx={{ display: 'flex' }}>
         <Box
           sx={{
             display: 'flex',
+            background: 'purple',
             justifyContent: 'center',
             alignItems: 'center',
-            background: 'white',
+            // background: 'white',
+            flex: '1',
             width: '100%',
             gap: '2.3em',
             borderBottom: '1px solid #1976D2',
@@ -114,10 +116,79 @@ const NextGame = () => {
             gap: '0.2em',
           }}
         >
+          <PrivacyTipIcon sx={{ color: 'green' }}></PrivacyTipIcon>
+          <Typography variant="body1">Máme lepšiu formu</Typography>
+        </Box>
+        <Box
+          sx={{
+            background: 'white',
+            display: 'flex',
+            paddingLeft: '1em',
+            py: '0.5em',
+            alignItems: 'center',
+            gap: '0.2em',
+          }}
+        >
+          <PrivacyTipIcon sx={{ color: 'orange' }}></PrivacyTipIcon>
+          <Typography variant="body1">
+            Kvalita brankárov je vyrovnaná
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            background: 'white',
+            display: 'flex',
+            paddingLeft: '1em',
+            py: '0.5em',
+            alignItems: 'center',
+            gap: '0.2em',
+          }}
+        >
+          <PrivacyTipIcon sx={{ color: 'orange' }}></PrivacyTipIcon>
+          <Typography variant="body1">Podobná kvalita trénerov</Typography>
+        </Box>
+        <Box
+          sx={{
+            background: 'white',
+            display: 'flex',
+            paddingLeft: '1em',
+            py: '0.5em',
+            alignItems: 'center',
+            gap: '0.2em',
+          }}
+        >
           <PrivacyTipIcon sx={{ color: 'red' }}></PrivacyTipIcon>
           <Typography variant="body1">
             Súper má papierovo lepšiu obranu
           </Typography>
+        </Box>
+        <Box
+          sx={{
+            background: 'white',
+            display: 'flex',
+            paddingLeft: '1em',
+            py: '0.5em',
+            alignItems: 'center',
+            gap: '0.2em',
+          }}
+        >
+          <PrivacyTipIcon sx={{ color: 'red' }}></PrivacyTipIcon>
+          <Typography variant="body1">
+            Súper bude po vysokej prehre nabudený
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            background: 'white',
+            display: 'flex',
+            paddingLeft: '1em',
+            py: '0.5em',
+            alignItems: 'center',
+            gap: '0.2em',
+          }}
+        >
+          <PrivacyTipIcon sx={{ color: 'red' }}></PrivacyTipIcon>
+          <Typography variant="body1">Súper má lepšiu disciplínu</Typography>
         </Box>
       </Box>
       <Box

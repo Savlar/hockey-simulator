@@ -1,35 +1,32 @@
 import { Box, Typography } from '@mui/material';
-import InboxMessages from './InboxMessages';
+import Stadium from './Stadium';
 
-const Inbox = () => {
+const Facilities = () => {
   return (
     <Box sx={{ width: '95%', margin: '0 auto' }} fixed>
       <Box
         sx={{
           bgcolor: '#cfe8fc',
-          height: '100vh',
           marginY: '1.5em',
         }}
       >
         <Box
           sx={{
             background: '#1976D2',
-            height: '10%',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
+            paddingY: '2em',
           }}
         >
           <Typography variant="h4" color={'white'}>
-            Pošta
+            Zázemie klubu
           </Typography>
         </Box>
-        <Box>
-          <InboxMessages></InboxMessages>
-        </Box>
+        <Stadium></Stadium>
       </Box>
     </Box>
   );
 };
 
-export default Inbox;
+export default Facilities;

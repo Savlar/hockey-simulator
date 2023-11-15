@@ -31,7 +31,6 @@ const LastFive = () => {
         sx={{
           width: '100%',
           height: '320px',
-          background: 'purple',
           display: 'flex',
           flexDirection: 'column',
         }}
