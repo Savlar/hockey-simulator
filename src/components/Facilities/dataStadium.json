@@ -7,7 +7,8 @@
     "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit, consectetur quidem numquam hic asperiores, a odio itaque esse, labore id? Quis quo obcaecati doloremque.",
     "stars": 4,
     "costs": "5 400 000",
-    "building": 24
+    "building": 24,
+    "demolishing": 7
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit, consectetur quidem numquam hic asperiores, a odio itaque esse, labore id? Quis quo obcaecati doloremque.",
     "stars": 4,
     "costs": "1 650 000",
-    "building": 18
+    "building": 18,
+    "demolishing": 4
   },
   {
     "id": 3,
@@ -26,8 +28,9 @@
     "header": "Parkovisko",
     "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit, consectetur quidem numquam hic asperiores, a odio itaque esse, labore id? Quis quo obcaecati doloremque.",
     "stars": 4,
-    "costs": "800 000",
-    "building": 9
+    "costs": "400 000",
+    "building": 9,
+    "demolishing": 3
   },
   {
     "id": 4,
@@ -36,8 +39,9 @@
     "header": "Šatne",
     "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit, consectetur quidem numquam hic asperiores, a odio itaque esse, labore id? Quis quo obcaecati doloremque.",
     "stars": 3,
-    "costs": "350 000",
-    "building": 6
+    "costs": "280 000",
+    "building": 6,
+    "demolishing": 2
   },
   {
     "id": 5,
@@ -46,8 +50,9 @@
     "header": "Kocka",
     "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit, consectetur quidem numquam hic asperiores, a odio itaque esse, labore id? Quis quo obcaecati doloremque.",
     "stars": 4,
-    "costs": "250 000€",
-    "building": 1
+    "costs": "250 000",
+    "building": 1,
+    "demolishing": 1
   },
   {
     "id": 6,
@@ -56,7 +61,8 @@
     "header": "VIP Boxy",
     "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit, consectetur quidem numquam hic asperiores, a odio itaque esse, labore id? Quis quo obcaecati doloremque.",
     "stars": 2,
-    "costs": "450 000",
-    "building": 9
+    "costs": "130 000",
+    "building": 9,
+    "demolishing": 3
   }
 ]

@@ -3,8 +3,40 @@ import { Box, Button, Typography } from '@mui/material';
 
 import Rating from '@mui/material/Rating';
 
-const OneStadium = ({ title, img, header, text, stars, costs, building }) => {
+const OneStadium = ({
+  title,
+  img,
+  header,
+  text,
+  stars,
+  costs,
+  building,
+  demolishing,
+}) => {
   const [value, setValue] = useState(stars);
+  const [isBuilding, setIsBuilding] = useState(false);
+  const [isDemolishing, setIsDemolishing] = useState(false);
+
+  const handleUpgrade = () => {
+    setValue((preValue) => preValue + 1);
+    setIsBuilding((preValue) => !preValue);
+  };
+
+  const handleDemolish = () => {
+    setValue((preValue) => preValue - 1);
+    setIsDemolishing((preValue) => !preValue);
+  };
+
+  const handleAbort = () => {
+    setIsBuilding((preValue) => !preValue);
+    setValue((preValue) => preValue - 1);
+  };
+
+  const handleStop = () => {
+    setIsDemolishing((preValue) => !preValue);
+    setValue((preValue) => preValue + 1);
+  };
+
   return (
     <Box sx={{ background: 'white' }}>
       <Box
@@ -54,7 +86,22 @@ const OneStadium = ({ title, img, header, text, stars, costs, building }) => {
           </Box>
           <Box>
             <Typography variant="h6">Výstavba:</Typography>
-            <Typography variant="body1">{building} mesiacov</Typography>
+
+            {isBuilding && (
+              <Typography variant="body1">
+                Zostáva {building * 30} dní
+              </Typography>
+            )}
+
+            {isDemolishing && (
+              <Typography variant="body1">
+                Zostáva {demolishing * 30} dní
+              </Typography>
+            )}
+
+            {!isBuilding && !isDemolishing && (
+              <Typography variant="body1">{building} mesiacov</Typography>
+            )}
           </Box>
         </Box>
       </Box>
@@ -67,12 +114,34 @@ const OneStadium = ({ title, img, header, text, stars, costs, building }) => {
           gap: '1.5em',
         }}
       >
-        <Button variant="contained" color="error">
-          Zbúrať
-        </Button>
-        <Button variant="contained" color="success">
-          Vylepšiť
-        </Button>
+        {isBuilding ? (
+          <Button variant="contained" color="error" onClick={handleAbort}>
+            Zrušiť
+          </Button>
+        ) : (
+          <Button
+            variant="contained"
+            color="error"
+            onClick={handleDemolish}
+            disabled={isDemolishing}
+          >
+            Zbúrať
+          </Button>
+        )}
+        {isDemolishing ? (
+          <Button variant="contained" color="success" onClick={handleStop}>
+            Zastaviť
+          </Button>
+        ) : (
+          <Button
+            variant="contained"
+            color="success"
+            onClick={handleUpgrade}
+            disabled={isBuilding}
+          >
+            Vylepšiť
+          </Button>
+        )}
       </Box>
     </Box>
   );
