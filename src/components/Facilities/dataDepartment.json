@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Tréningové vybavenie",
+    "img": "/images/fitness.jpg",
+    "header": "Tréningové oddelenie",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit, consectetur quidem numquam hic asperiores, a odio itaque esse, labore id? Quis quo obcaecati doloremque.",
+    "stars": 3,
+    "costs": "175 000",
+    "building": 5,
+    "demolishing": 1
+  },
+  {
+    "id": 2,
+    "title": "Regeneračné centrum",
+    "img": "/images/regeneration.jpg",
+    "header": "Regeneračné oddelenie",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit, consectetur quidem numquam hic asperiores, a odio itaque esse, labore id? Quis quo obcaecati doloremque.",
+    "stars": 3,
+    "costs": "85 000",
+    "building": 4,
+    "demolishing": 1
+  },
+  {
+    "id": 3,
+    "title": "HR oddelenie",
+    "img": "/images/HR.jpg",
+    "header": "HR oddelenie",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit, consectetur quidem numquam hic asperiores, a odio itaque esse, labore id? Quis quo obcaecati doloremque.",
+    "stars": 1,
+    "costs": "1 500",
+    "building": 1,
+    "demolishing": 0
+  },
+  {
+    "id": 4,
+    "title": "Oddelenie údržby",
+    "img": "/images/maintrance.jpg",
+    "header": "Oddelenie údržby",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit, consectetur quidem numquam hic asperiores, a odio itaque esse, labore id? Quis quo obcaecati doloremque.",
+    "stars": 2,
+    "costs": "7 500",
+    "building": 2,
+    "demolishing": 1
+  },
+  {
+    "id": 5,
+    "title": "Športová akadémia",
+    "img": "/images/academy.jpg",
+    "header": "Športová akadémia",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit, consectetur quidem numquam hic asperiores, a odio itaque esse, labore id? Quis quo obcaecati doloremque.",
+    "stars": 4,
+    "costs": "100 000",
+    "building": 6,
+    "demolishing": 3
+  },
+  {
+    "id": 6,
+    "title": "Skauting",
+    "img": "/images/scouting.jpg",
+    "header": "Skauting",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit, consectetur quidem numquam hic asperiores, a odio itaque esse, labore id? Quis quo obcaecati doloremque.",
+    "stars": 2,
+    "costs": "25 000",
+    "building": 3,
+    "demolishing": 1
+  }
+]

@@ -1,5 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import Stadium from './Stadium';
+import Departmens from './Departments';
 
 const Facilities = () => {
   return (
@@ -8,6 +9,7 @@ const Facilities = () => {
         sx={{
           bgcolor: '#cfe8fc',
           marginY: '1.5em',
+          paddingBottom: '1.5em',
         }}
       >
         <Box
@@ -24,6 +26,7 @@ const Facilities = () => {
           </Typography>
         </Box>
         <Stadium></Stadium>
+        <Departmens></Departmens>
       </Box>
     </Box>
   );
