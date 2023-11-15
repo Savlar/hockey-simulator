@@ -7,22 +7,45 @@ import Players from './components/Players/Players';
 import Inbox from './components/Inbox/Inbox';
 import Facilities from './components/Facilities/Facilities';
 
+import { createContext, useState } from 'react';
+
+export const GlobalContext = createContext();
+
+export const GlobalProvider = ({ children }) => {
+  const [money, setMoney] = useState(235000);
+  const [moneyMonthly, setMoneyMonthly] = useState(17750);
+
+  // const updateMoney = (amount) => {
+  //   setMoney((prevMoney) => prevMoney + amount);
+  // };
+
+  return (
+    <GlobalContext.Provider
+      value={{ money, setMoney, moneyMonthly, setMoneyMonthly }}
+    >
+      {children}
+    </GlobalContext.Provider>
+  );
+};
+
 function App() {
   return (
     <section>
       <BrowserRouter>
-        <Navbar />
-        <Box sx={{ display: 'grid', gridTemplateColumns: '200px 87%' }}>
-          <Sidebar />
-          <Routes>
-            <Route path="/Home" element={<Home />}></Route>
-            <Route path="/Players" element={<Players />}></Route>
-            <Route path="/Inbox" element={<Inbox />}></Route>
-            <Route path="/Facilities" element={<Facilities />}></Route>
-            {/* DEFAULT */}
-            <Route index element={<Home />} />
-          </Routes>
-        </Box>
+        <GlobalProvider>
+          <Navbar />
+          <Box sx={{ display: 'grid', gridTemplateColumns: '200px 87%' }}>
+            <Sidebar />
+            <Routes>
+              <Route path="/Home" element={<Home />} />
+              <Route path="/Players" element={<Players />} />
+              <Route path="/Inbox" element={<Inbox />} />
+              <Route path="/Facilities" element={<Facilities />} />
+              {/* DEFAULT */}
+              <Route index element={<Home />} />
+            </Routes>
+          </Box>
+        </GlobalProvider>
       </BrowserRouter>
     </section>
   );

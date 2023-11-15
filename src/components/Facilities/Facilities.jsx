@@ -1,8 +1,13 @@
+import { useContext } from 'react';
 import { Box, Typography } from '@mui/material';
 import Stadium from './Stadium';
 import Departmens from './Departments';
+import { GlobalContext } from './../../App';
 
 const Facilities = () => {
+  const { money } = useContext(GlobalContext);
+  console.log(money);
+
   return (
     <Box sx={{ width: '95%', margin: '0 auto' }} fixed>
       <Box
@@ -25,6 +30,7 @@ const Facilities = () => {
             Zázemie klubu
           </Typography>
         </Box>
+        <Box>{money}€</Box>
         <Stadium></Stadium>
         <Departmens></Departmens>
       </Box>

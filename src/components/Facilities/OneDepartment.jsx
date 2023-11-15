@@ -1,5 +1,15 @@
+import { useContext } from 'react';
 import { useState } from 'react';
-import { Box, Button, Typography } from '@mui/material';
+import {
+  Box,
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  Typography,
+} from '@mui/material';
+import { GlobalContext } from './../../App';
 
 import Rating from '@mui/material/Rating';
 
@@ -16,10 +26,13 @@ const OneDepartment = ({
   const [value, setValue] = useState(stars);
   const [isBuilding, setIsBuilding] = useState(false);
   const [isDemolishing, setIsDemolishing] = useState(false);
+  const [isInfoModalOpen, setInfoModalOpen] = useState(false);
+  const { money, setMoney } = useContext(GlobalContext);
 
   const handleUpgrade = () => {
     setValue((preValue) => preValue + 1);
     setIsBuilding((preValue) => !preValue);
+    setMoney((preValue) => preValue - parseInt(costs.replace(/\s/g, ''), 10));
   };
 
   const handleDemolish = () => {
@@ -30,11 +43,25 @@ const OneDepartment = ({
   const handleAbort = () => {
     setIsBuilding((preValue) => !preValue);
     setValue((preValue) => preValue - 1);
+    setMoney((preValue) => preValue + parseInt(costs.replace(/\s/g, ''), 10));
   };
 
   const handleStop = () => {
     setIsDemolishing((preValue) => !preValue);
     setValue((preValue) => preValue + 1);
+  };
+
+  const handleInfoClick = () => {
+    setInfoModalOpen(true);
+  };
+
+  const handleInfoClose = () => {
+    setInfoModalOpen(false);
+  };
+
+  const handleUpgradeAndInfo = () => {
+    handleInfoClick();
+    handleUpgrade();
   };
 
   return (
@@ -136,13 +163,35 @@ const OneDepartment = ({
           <Button
             variant="contained"
             color="success"
-            onClick={handleUpgrade}
+            onClick={handleUpgradeAndInfo}
             disabled={isBuilding}
           >
             Vylepšiť
           </Button>
         )}
       </Box>
+      {/* Information Modal */}
+      <Dialog open={isInfoModalOpen} onClose={handleInfoClose}>
+        <DialogTitle sx={{ background: '#1976D2', color: 'white' }}>
+          {title}
+        </DialogTitle>
+        <DialogContent>
+          <Typography
+            variant="body1"
+            sx={{ textAlign: 'justify', paddingY: '1.5em' }}
+          >
+            {title} sa navýši o 1 úroveň Celková čiastka vylepšenia je {costs}€
+            Vylepšenie bude dokončené o {building * 30} dní. Váš súčasný
+            zostatok v klubovej kase je {money}€. Vylepšenie môžete v prvý deň
+            zrušit bez penalizácie.
+          </Typography>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleInfoClose} color="primary">
+            Zavrieť
+          </Button>
+        </DialogActions>
+      </Dialog>
     </Box>
   );
 };
