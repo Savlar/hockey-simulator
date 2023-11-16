@@ -5,8 +5,10 @@ import Departmens from './Departments';
 import { GlobalContext } from './../../App';
 
 const Facilities = () => {
-  const { money } = useContext(GlobalContext);
-  console.log(money);
+  const { money, moneyMonthly } = useContext(GlobalContext);
+
+  const moneyTextColor = money >= 0 ? 'green' : 'red';
+  const moneyMonthlyTextColor = moneyMonthly >= 0 ? 'green' : 'red';
 
   return (
     <Box sx={{ width: '95%', margin: '0 auto' }} fixed>
@@ -30,7 +32,31 @@ const Facilities = () => {
             Zázemie klubu
           </Typography>
         </Box>
-        <Box>{money}€</Box>
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: '2em',
+            py: '2em',
+            borderBottom: '1px solid black',
+          }}
+        >
+          <Box>
+            <Typography variant="body1" sx={{ fontSize: '1.5rem' }}>
+              Dostupné prostriedky:{' '}
+              <span style={{ color: moneyTextColor }}>{money}€</span>
+            </Typography>
+          </Box>
+          <Box>
+            <Typography variant="body1" sx={{ fontSize: '1.5rem' }}>
+              Mesačná bilancia:{' '}
+              <span style={{ color: moneyMonthlyTextColor }}>
+                {moneyMonthly}€
+              </span>
+            </Typography>
+          </Box>
+        </Box>
         <Stadium></Stadium>
         <Departmens></Departmens>
       </Box>
