@@ -16,6 +16,7 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import PivotTableChartIcon from '@mui/icons-material/PivotTableChart';
 import EmailIcon from '@mui/icons-material/Email';
 import SportsHockeyIcon from '@mui/icons-material/SportsHockey';
+import HelpIcon from '@mui/icons-material/Help';
 import Badge from '@mui/material/Badge';
 import { useState } from 'react';
 
@@ -152,6 +153,22 @@ const Sidebar = () => {
           </List>
         </Collapse>
       </Link>
+      <Link
+        to="/Overview"
+        style={{ textDecoration: 'none', color: 'inherit' }}
+      >
+        <Collapse in={openTactics} timeout="auto" unmountOnExit>
+          <List component="div" disablePadding>
+            <ListItemButton sx={{ pl: 4 }}>
+              <ListItemText primary="Prehľad" />
+            </ListItemButton>
+          </List>
+        </Collapse>
+      </Link>
+      <Link
+        to="/Formations"
+        style={{ textDecoration: 'none', color: 'inherit' }}
+      >
       <Collapse in={openTactics} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
           <ListItemButton sx={{ pl: 4 }}>
@@ -159,17 +176,11 @@ const Sidebar = () => {
           </ListItemButton>
         </List>
       </Collapse>
+      </Link>
       <Collapse in={openTactics} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemText primary="Tréningy" />
-          </ListItemButton>
-        </List>
-      </Collapse>
-      <Collapse in={openTactics} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText primary="Zmluvy" />
           </ListItemButton>
         </List>
       </Collapse>
@@ -268,6 +279,20 @@ const Sidebar = () => {
             </ListItemIcon>
             <ListItemText
               primary="Klub
+            "
+            />
+          </ListItemButton>
+        </ListItem>
+      </List>
+      {/* Návod */}
+      <List>
+        <ListItem disablePadding>
+          <ListItemButton component="a" href="#dresy">
+            <ListItemIcon>
+              <HelpIcon />
+            </ListItemIcon>
+            <ListItemText
+              primary="Návod
             "
             />
           </ListItemButton>

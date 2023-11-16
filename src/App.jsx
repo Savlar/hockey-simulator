@@ -3,11 +3,13 @@ import Sidebar from './components/Sidebar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Box } from '@mui/material';
 import Home from './components/Home/Home';
-import Players from './components/Players/Players';
+import Players from './components/Players/AllPlayers/Players';
 import Inbox from './components/Inbox/Inbox';
 import Facilities from './components/Facilities/Facilities';
 
 import { createContext, useState } from 'react';
+import Formations from './components/Players/Formations/Formations';
+import Overview from './components/Players/Overview/Overview';
 
 export const GlobalContext = createContext();
 
@@ -41,6 +43,8 @@ function App() {
               <Route path="/Players" element={<Players />} />
               <Route path="/Inbox" element={<Inbox />} />
               <Route path="/Facilities" element={<Facilities />} />
+              <Route path="/Formations" element={<Formations />} />
+              <Route path="/Overview" element={<Overview />} />
               {/* DEFAULT */}
               <Route index element={<Home />} />
             </Routes>

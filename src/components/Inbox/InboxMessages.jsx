@@ -29,22 +29,35 @@ import {
 import CloseIcon from '@mui/icons-material/Close';
 // import { visuallyHidden } from '@mui/utils';
 
-function createData(id, name, calories, fat, carbs, protein) {
+function createData(id, name, sender, date) {
   return {
     id,
     name,
-    calories,
-    fat,
-    carbs,
-    protein,
+    sender,
+    date,
   };
 }
 
 const rows = [
-  createData(1, 'Vitajte v Nitra', 305, 3.7, 67, 4.3),
-  createData(2, 'Informácie o tíme', 452, 25.0, 51, 4.9),
-  createData(3, 'Hráči', 262, 16.0, 24, 6.0),
-  createData(4, 'Očakávania vedenia', 159, 6.0, 24, 4.0),
+  createData(
+    1,
+    'Vitajte v Nitra',
+    'Miroslav Kováčik - Prezident HK NITRA',
+    '8.11.2023'
+  ),
+  createData(
+    2,
+    'Informácie o tíme',
+    'Miroslav Kováčik - Prezident HK NITRA',
+    '8.11.2023'
+  ),
+  createData(3, 'Hráči', 'Dušan Milo - Asistent trénera HK NITRA', '8.11.2023'),
+  createData(
+    4,
+    'Očakávania vedenia',
+    'Miroslav Kováčik - Prezident HK NITRA',
+    '8.11.2023'
+  ),
 ];
 
 function descendingComparator(a, b, orderBy) {
@@ -83,28 +96,16 @@ const headCells = [
     label: 'Správy',
   },
   {
-    id: 'calories',
+    id: 'sender',
     numeric: true,
     disablePadding: false,
-    label: 'Calories',
+    label: 'Odosielateľ',
   },
   {
-    id: 'fat',
+    id: 'date',
     numeric: true,
     disablePadding: false,
-    label: 'Fat (g)',
-  },
-  {
-    id: 'carbs',
-    numeric: true,
-    disablePadding: false,
-    label: 'Carbs (g)',
-  },
-  {
-    id: 'protein',
-    numeric: true,
-    disablePadding: false,
-    label: 'Protein (g)',
+    label: 'Dátum',
   },
 ];
 
@@ -230,7 +231,7 @@ EnhancedTableToolbar.propTypes = {
 
 export default function EnhancedTable() {
   const [order, setOrder] = React.useState('asc');
-  const [orderBy, setOrderBy] = React.useState('calories');
+  const [orderBy, setOrderBy] = React.useState('sender');
   const [selected, setSelected] = React.useState([]);
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(10);
@@ -313,7 +314,7 @@ export default function EnhancedTable() {
         <EnhancedTableToolbar numSelected={selected.length} />
         <TableContainer>
           <Table
-            sx={{ minWidth: 750, background: '#e1e1d0' }}
+            sx={{ minWidth: 750, background: '#cfe8fc' }}
             aria-labelledby="tableTitle"
           >
             <EnhancedTableHead
@@ -363,10 +364,8 @@ export default function EnhancedTable() {
                     >
                       {row.name}
                     </TableCell>
-                    <TableCell align="right">{row.calories}</TableCell>
-                    <TableCell align="right">{row.fat}</TableCell>
-                    <TableCell align="right">{row.carbs}</TableCell>
-                    <TableCell align="right">{row.protein}</TableCell>
+                    <TableCell align="right">{row.sender}</TableCell>
+                    <TableCell align="right">{row.date}</TableCell>
                   </TableRow>
                 );
               })}
@@ -405,7 +404,7 @@ export default function EnhancedTable() {
         </DialogTitle>
         <DialogContent>
           <Typography sx={{ paddingBottom: '1.5em' }}>
-            Vitajte v HK Nitra
+            Vitajte v HK Nitra {selectedMessage?.name}
           </Typography>
           <Typography>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga autem
