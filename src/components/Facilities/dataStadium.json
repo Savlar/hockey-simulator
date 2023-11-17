@@ -7,6 +7,7 @@
     "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit, consectetur quidem numquam hic asperiores, a odio itaque esse, labore id? Quis quo obcaecati doloremque.",
     "stars": 4,
     "costs": "5 400 000",
+    "monthlyCosts": "1800",
     "building": 24,
     "demolishing": 7
   },
@@ -18,6 +19,7 @@
     "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit, consectetur quidem numquam hic asperiores, a odio itaque esse, labore id? Quis quo obcaecati doloremque.",
     "stars": 4,
     "costs": "1 650 000",
+    "monthlyCosts": "1000",
     "building": 18,
     "demolishing": 4
   },
@@ -29,6 +31,7 @@
     "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit, consectetur quidem numquam hic asperiores, a odio itaque esse, labore id? Quis quo obcaecati doloremque.",
     "stars": 4,
     "costs": "400 000",
+    "monthlyCosts": "0",
     "building": 9,
     "demolishing": 3
   },
@@ -40,6 +43,7 @@
     "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit, consectetur quidem numquam hic asperiores, a odio itaque esse, labore id? Quis quo obcaecati doloremque.",
     "stars": 3,
     "costs": "280 000",
+    "monthlyCosts": "100",
     "building": 6,
     "demolishing": 2
   },
@@ -51,6 +55,7 @@
     "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit, consectetur quidem numquam hic asperiores, a odio itaque esse, labore id? Quis quo obcaecati doloremque.",
     "stars": 4,
     "costs": "250 000",
+    "monthlyCosts": "500",
     "building": 1,
     "demolishing": 1
   },
@@ -62,6 +67,7 @@
     "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit, consectetur quidem numquam hic asperiores, a odio itaque esse, labore id? Quis quo obcaecati doloremque.",
     "stars": 2,
     "costs": "130 000",
+    "monthlyCosts": "1500",
     "building": 9,
     "demolishing": 3
   }

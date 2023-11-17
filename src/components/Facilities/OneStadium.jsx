@@ -22,17 +22,22 @@ const OneStadium = ({
   costs,
   building,
   demolishing,
+  monthlyCosts,
 }) => {
   const [value, setValue] = useState(stars);
   const [isBuilding, setIsBuilding] = useState(false);
   const [isDemolishing, setIsDemolishing] = useState(false);
   const [isInfoModalOpen, setInfoModalOpen] = useState(false);
-  const { money, setMoney } = useContext(GlobalContext);
+  const { money, setMoney, moneyMonthly, setMoneyMonthly } =
+    useContext(GlobalContext);
 
   const handleUpgrade = () => {
     setValue((preValue) => preValue + 1);
     setIsBuilding((preValue) => !preValue);
     setMoney((preValue) => preValue - parseInt(costs.replace(/\s/g, ''), 10));
+    setMoneyMonthly(
+      (preValue) => preValue - parseInt(monthlyCosts.replace(/\s/g, ''), 10)
+    );
   };
 
   const handleDemolish = () => {
@@ -44,6 +49,9 @@ const OneStadium = ({
     setIsBuilding((preValue) => !preValue);
     setValue((preValue) => preValue - 1);
     setMoney((preValue) => preValue + parseInt(costs.replace(/\s/g, ''), 10));
+    setMoneyMonthly(
+      (preValue) => preValue + parseInt(monthlyCosts.replace(/\s/g, ''), 10)
+    );
   };
 
   const handleStop = () => {
@@ -110,6 +118,10 @@ const OneStadium = ({
           <Box>
             <Typography variant="h6">Cena vylepšenia:</Typography>
             <Typography variant="body1">{costs}€</Typography>
+          </Box>
+          <Box>
+            <Typography variant="h6">Mesačné náklady:</Typography>
+            <Typography variant="body1">{monthlyCosts}€</Typography>
           </Box>
           <Box>
             <Typography variant="h6">Výstavba:</Typography>
@@ -182,8 +194,8 @@ const OneStadium = ({
           >
             {title} sa navýši o 1 úroveň Celková čiastka vylepšenia je {costs}€
             Vylepšenie bude dokončené o {building * 30} dní. Váš súčasný
-            zostatok v klubovej kase je {money}€. Vylepšenie môžete v prvý deň
-            zrušit bez penalizácie.
+            zostatok v klubovej kase je {money}€. Mesačná bilancia klubu je{' '}
+            {moneyMonthly}€. Vylepšenie môžete v prvý deň zrušit bez penalizácie.
           </Typography>
         </DialogContent>
         <DialogActions>
