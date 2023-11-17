@@ -14,7 +14,7 @@ const OverviewLayout = () => {
           marginLeft: '2em',
         }}
       >
-        <Typography variant="h3">Hráči</Typography>
+        <Typography variant="h4">Hráči</Typography>
       </Box>
 
       <Box

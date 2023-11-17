@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Paper, Typography } from '@mui/material';
 import Stadium from './Stadium';
 import Departmens from './Departments';
 import { GlobalContext } from './../../App';
@@ -11,11 +11,9 @@ const Facilities = () => {
   const moneyMonthlyTextColor = moneyMonthly >= 0 ? 'green' : 'red';
 
   return (
-    <Box sx={{ width: '95%', margin: '0 auto' }} fixed>
+    <Paper sx={{ width: '95%', margin: '1.5em auto' }} fixed>
       <Box
         sx={{
-          bgcolor: '#cfe8fc',
-          marginY: '1.5em',
           paddingBottom: '1.5em',
         }}
       >
@@ -28,7 +26,7 @@ const Facilities = () => {
             paddingY: '2em',
           }}
         >
-          <Typography variant="h4" color={'white'}>
+          <Typography variant="h2" color={'white'}>
             Zázemie klubu
           </Typography>
         </Box>
@@ -60,7 +58,7 @@ const Facilities = () => {
         <Stadium></Stadium>
         <Departmens></Departmens>
       </Box>
-    </Box>
+    </Paper>
   );
 };
 

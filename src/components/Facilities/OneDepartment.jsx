@@ -7,6 +7,7 @@ import {
   DialogActions,
   DialogContent,
   DialogTitle,
+  Paper,
   Typography,
 } from '@mui/material';
 import { GlobalContext } from './../../App';
@@ -73,7 +74,7 @@ const OneDepartment = ({
   };
 
   return (
-    <Box sx={{ background: 'white' }}>
+    <Paper elevation={3} sx={{ background: 'white' }}>
       <Box
         sx={{
           background: '#1976D2',
@@ -205,7 +206,7 @@ const OneDepartment = ({
           </Button>
         </DialogActions>
       </Dialog>
-    </Box>
+    </Paper>
   );
 };
 

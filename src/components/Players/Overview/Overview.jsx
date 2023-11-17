@@ -18,7 +18,7 @@ const Overview = () => {
             paddingY: '2em',
           }}
         >
-          <Typography variant="h4" color={'white'}>
+          <Typography variant="h2" color={'white'}>
             Prehľad
           </Typography>
         </Box>

@@ -14,7 +14,7 @@ const Stadium = () => {
           marginLeft: '2em',
         }}
       >
-        <Typography variant="h3">Štadión</Typography>
+        <Typography variant="h4">Štadión</Typography>
       </Box>
 
       <Box
@@ -24,6 +24,7 @@ const Stadium = () => {
           gridTemplateRows: 'auto auto',
           marginTop: '1em',
           gap: '1em',
+          paddingX:"1em"
         }}
       >
         {dataStadium.map((one) => {

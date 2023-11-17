@@ -14,7 +14,7 @@ const Departmens = () => {
           marginLeft: '2em',
         }}
       >
-        <Typography variant="h3">Oddelenia</Typography>
+        <Typography variant="h4">Oddelenia</Typography>
       </Box>
 
       <Box
@@ -24,6 +24,7 @@ const Departmens = () => {
           gridTemplateRows: 'auto auto',
           marginTop: '1em',
           gap: '1em',
+          paddingX: '1em',
         }}
       >
         {dataDepartment.map((one) => {
