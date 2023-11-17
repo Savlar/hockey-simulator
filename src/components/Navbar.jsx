@@ -5,10 +5,11 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
+import { Paper } from '@mui/material';
 
 export default function Navbar() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Paper elevation={3} sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{ padding: '0.8em 0em' }}>
         <Toolbar
           sx={{
@@ -71,6 +72,6 @@ export default function Navbar() {
           </Box>
         </Toolbar>
       </AppBar>
-    </Box>
+    </Paper>
   );
 }
