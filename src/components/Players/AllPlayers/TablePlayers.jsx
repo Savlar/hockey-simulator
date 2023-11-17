@@ -18,6 +18,16 @@ const rows = [
   createData('Sahir Gill', 26, 'TH', 75, 6.0, 79),
   createData('Tomáš Hrnka', 30, 'SU', 78, 4.3, 76),
   createData('James Cotton', 35, 'OO', 72, 3.9, 81),
+  createData('Branislav Mezei', 24, 'DO', 58, 4.0, 74),
+  createData('Samuel Buček', 27, 'SN', 83, 4.3, 83),
+  createData('Sahir Gill', 26, 'TH', 75, 6.0, 79),
+  createData('Tomáš Hrnka', 30, 'SU', 78, 4.3, 76),
+  createData('James Cotton', 35, 'OO', 72, 3.9, 81),
+  createData('Branislav Mezei', 24, 'DO', 58, 4.0, 74),
+  createData('Samuel Buček', 27, 'SN', 83, 4.3, 83),
+  createData('Sahir Gill', 26, 'TH', 75, 6.0, 79),
+  createData('Tomáš Hrnka', 30, 'SU', 78, 4.3, 76),
+  createData('James Cotton', 35, 'OO', 72, 3.9, 81),
 ];
 
 export default function DenseTable() {
@@ -45,7 +55,7 @@ export default function DenseTable() {
   const sortedRows = rows.sort(getComparator(order));
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} elevation={3}>
       <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
         <TableHead>
           <TableRow>
