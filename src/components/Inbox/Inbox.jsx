@@ -1,14 +1,13 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Paper, Typography } from '@mui/material';
 import InboxMessages from './InboxMessages';
 
 const Inbox = () => {
   return (
-    <Box sx={{ width: '95%', margin: '0 auto' }} fixed>
+    <Paper elevation={3} sx={{ width: '95%', margin: '1.5em auto' }} fixed>
       <Box
         sx={{
           bgcolor: '#cfe8fc',
           height: '100vh',
-          marginY: '1.5em',
         }}
       >
         <Box
@@ -28,7 +27,7 @@ const Inbox = () => {
           <InboxMessages></InboxMessages>
         </Box>
       </Box>
-    </Box>
+    </Paper>
   );
 };
 
