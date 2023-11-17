@@ -14,7 +14,7 @@ const Forwards = () => {
           marginLeft: '2em',
         }}
       >
-        <Typography variant="h3">Útoky</Typography>
+        <Typography variant="h4">Útočné Formácie</Typography>
       </Box>
 
       <Box

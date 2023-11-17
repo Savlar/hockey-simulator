@@ -5,6 +5,7 @@ import {
   DialogActions,
   DialogContent,
   DialogTitle,
+  Paper,
   Typography,
 } from '@mui/material';
 import { useState } from 'react';
@@ -36,7 +37,7 @@ const OneForward = ({
   };
 
   return (
-    <Box sx={{ background: 'white' }}>
+    <Paper elevation={3} sx={{ background: 'white' }}>
       <Box
         sx={{
           background: '#1976D2',
@@ -121,7 +122,7 @@ const OneForward = ({
           </Button>
         </DialogActions>
       </Dialog>
-    </Box>
+    </Paper>
   );
 };
 
