@@ -43,7 +43,7 @@ export default function News() {
   };
 
   return (
-    <Box sx={{ background: 'red' }}>
+    <Box sx={{ background: 'white' }}>
       <Box
         sx={{
           width: '100%',
@@ -72,7 +72,7 @@ export default function News() {
                   style={{ width: '100%', height: '240px' }}
                 ></img>
               </Box>
-              <Box sx={{ p: '1em' }}>
+              <Box sx={{ p: '1em', height: '280px' }}>
                 <Typography>
                   Hokejisti Dukly Trenčín zdolali v nedeľňajšom zápase 17. kola
                   Tipos extraligy veľkého rivala HC Slovan Bratislava
@@ -98,7 +98,7 @@ export default function News() {
                 ></img>
               </Box>
               <Box>
-                <Typography sx={{ p: '1em' }}>
+                <Typography sx={{ p: '1em', height: '280px' }}>
                   Hokejisti Zvolena v nedeľňajšom zápase 17. kola Tipos
                   extraligy podľahli na svojom ľade Nitre 5:7 a stratili druhú
                   priečku v tabuľke. Nepomohla im za stavu 0:3 ani výmena
@@ -122,7 +122,7 @@ export default function News() {
                 ></img>
               </Box>
               <Box>
-                <Typography sx={{ p: '1em' }}>
+                <Typography sx={{ p: '1em', height: '280px' }}>
                   Američan Todd Bjorkstrand sa stal novým trénerom hokejistov HK
                   Poprad. Na striedačke účastníka Tipos extraligy nahradil Čecha
                   Aleša Tottera, ktorý v tíme skončil vo štvrtok po vzájomnej
