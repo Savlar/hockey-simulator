@@ -1,10 +1,10 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Paper, Typography } from '@mui/material';
 import TableOne from './TableOne';
 import dataTable from './dataTable.json';
 
 const Table = () => {
   return (
-    <Box
+    <Paper elevation={3}
       sx={{
         display: 'flex',
         flexDirection: 'column',
@@ -40,7 +40,7 @@ const Table = () => {
             return <TableOne key={oneTeam.id} {...oneTeam} />;
           })}
         </Box>
-    </Box>
+    </Paper>
   );
 };
 

@@ -12,7 +12,6 @@ const Home = () => {
     <Box sx={{ width: '95%', margin: '0 auto' }} fixed>
       <Box
         sx={{
-          bgcolor: '#cfe8fc',
           marginY: '1.5em',
         }}
       >

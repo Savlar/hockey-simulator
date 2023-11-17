@@ -1,9 +1,9 @@
-import { Box, Tooltip, Typography } from '@mui/material';
+import { Box, Paper, Tooltip, Typography } from '@mui/material';
 import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
 
 const NextGame = () => {
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+    <Paper elevation={3} sx={{ display: 'flex', flexDirection: 'column' }}>
       <Box
         sx={{
           width: '100%',
@@ -190,18 +190,7 @@ const NextGame = () => {
           <Typography variant="body1">Súper má lepšiu disciplínu</Typography>
         </Box>
       </Box>
-      <Box
-        sx={{
-          width: '100%',
-          background: '#1976D2',
-          textAlign: 'center',
-          height: '50px',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      ></Box>
-    </Box>
+    </Paper>
   );
 };
 

@@ -1,10 +1,10 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Paper, Typography } from '@mui/material';
 import LastFiveOne from './LastFiveOne';
 import dataLastFive from './dataLastFive.json';
 
 const LastFive = () => {
   return (
-    <Box
+    <Paper elevation={3}
       sx={{
         display: 'flex',
         flexDirection: 'column',
@@ -39,7 +39,7 @@ const LastFive = () => {
           return <LastFiveOne key={oneMatch.id} {...oneMatch} />;
         })}
       </Box>
-    </Box>
+    </Paper>
   );
 };
 

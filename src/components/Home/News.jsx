@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, Tab, Tabs, Typography } from '@mui/material';
+import { Box, Paper, Tab, Tabs, Typography } from '@mui/material';
 import PropTypes from 'prop-types';
 
 function CustomTabPanel(props) {
@@ -43,7 +43,7 @@ export default function News() {
   };
 
   return (
-    <Box sx={{ background: 'white' }}>
+    <Paper elevation={3}>
       <Box
         sx={{
           width: '100%',
@@ -170,6 +170,6 @@ export default function News() {
           />
         </Tabs>
       </Box>
-    </Box>
+    </Paper>
   );
 }

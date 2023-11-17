@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Paper, Typography } from '@mui/material';
 import dayjs from 'dayjs';
 import sk from 'dayjs/locale/sk';
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
@@ -12,7 +12,7 @@ const Calendar = () => {
   const [value, setValue] = useState(dayjs('2023-11-6'));
 
   return (
-    <Box>
+    <Paper elevation={3}>
       <Box
         sx={{
           width: '100%',
@@ -49,7 +49,7 @@ const Calendar = () => {
           </DemoContainer>
         </LocalizationProvider>
       </Box>
-    </Box>
+    </Paper>
   );
 };
 

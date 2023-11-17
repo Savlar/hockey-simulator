@@ -1,11 +1,11 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Paper, Typography } from '@mui/material';
 
 import dataLastGame from './dataLastGame.json';
 import LastGameOne from './LastGameOne';
 
 const LastGame = () => {
   return (
-    <Box
+    <Paper elevation={3}
       sx={{
         display: 'flex',
         flexDirection: 'column',
@@ -39,7 +39,7 @@ const LastGame = () => {
           return <LastGameOne key={oneInfo.id} {...oneInfo} />;
         })}
       </Box>
-    </Box>
+    </Paper>
   );
 };
 
