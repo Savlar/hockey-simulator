@@ -3,7 +3,7 @@ import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
 
 const NextGame = () => {
   return (
-    <Box sx={{ background: 'green', display: 'flex', flexDirection: 'column' }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column' }}>
       <Box
         sx={{
           width: '100%',
@@ -19,14 +19,13 @@ const NextGame = () => {
           Nasledujúci zápas
         </Typography>
       </Box>
-      <Box sx={{ display: 'flex' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
         <Box
           sx={{
             display: 'flex',
-            background: 'purple',
             justifyContent: 'center',
             alignItems: 'center',
-            // background: 'white',
+            background: 'white',
             flex: '1',
             width: '100%',
             gap: '2.3em',
