@@ -312,7 +312,7 @@ export default function EnhancedTable() {
     <Box sx={{ width: '100%' }}>
       <Paper sx={{ width: '100%', mb: 2 }}>
         <EnhancedTableToolbar numSelected={selected.length} />
-        <TableContainer>
+        <TableContainer sx={{height:"75vh"}}>
           <Table
             sx={{ minWidth: 750, background: '#cfe8fc' }}
             aria-labelledby="tableTitle"

@@ -99,7 +99,7 @@ const OneDepartment = ({
         <Typography variant="h5">{header}</Typography>
         <Typography
           variant="body1"
-          sx={{ marginTop: '1em', textAlign: 'justify' }}
+          sx={{ marginTop: '1em', textAlign: 'justify', height:"170px" }}
         >
           {text}
         </Typography>
