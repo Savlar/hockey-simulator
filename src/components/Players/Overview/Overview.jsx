@@ -1,13 +1,11 @@
 import OverviewLayout from './OverviewLayout';
-import { Box, Typography } from '@mui/material';
+import { Box, Paper, Typography } from '@mui/material';
 
 const Overview = () => {
   return (
-    <Box sx={{ width: '95%', margin: '0 auto' }} fixed>
+    <Paper elevation={3} sx={{ width: '95%', margin: '1.5em auto' }} fixed>
       <Box
         sx={{
-          bgcolor: '#cfe8fc',
-          marginY: '1.5em',
           paddingBottom: '1.5em',
         }}
       >
@@ -26,7 +24,7 @@ const Overview = () => {
         </Box>
         <OverviewLayout></OverviewLayout>
       </Box>
-    </Box>
+    </Paper>
   );
 };
 
