@@ -12,7 +12,7 @@ const TableOne = ({
   points,
 }) => {
   return (
-    <Box sx={{ display: 'flex', background: 'red', flex: '1' }}>
+    <Box sx={{ display: 'flex', flex: 1 }}>
       <Box
         sx={{
           display: 'flex',

@@ -8,11 +8,9 @@ const Table = () => {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        flex: 1,
-        background: 'yellow',
       }}
     >
-      <Box sx={{ flex: '1' }}>
+      <Box>
         <Box
           sx={{
             width: '100%',
@@ -28,19 +26,20 @@ const Table = () => {
             Tabuľka
           </Typography>
         </Box>
-        <Box
+      </Box>
+      <Box
           sx={{
             width: '100%',
             display: 'flex',
+            flex:"1",
             flexDirection: 'column',
-            height: '100%',
+            background:"white"
           }}
         >
           {dataTable.map((oneTeam) => {
             return <TableOne key={oneTeam.id} {...oneTeam} />;
           })}
         </Box>
-      </Box>
     </Box>
   );
 };
