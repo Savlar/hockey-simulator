@@ -14,8 +14,8 @@ function CustomTabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box>
-          <Typography>{children}</Typography>
+        <Box sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+          <Typography sx={{ flex: 1 }}>{children}</Typography>
         </Box>
       )}
     </div>
@@ -43,7 +43,15 @@ export default function News() {
   };
 
   return (
-    <Paper elevation={3}>
+    <Paper
+      elevation={3}
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%',
+        position: 'relative'
+      }}
+    >
       <Box
         sx={{
           width: '100%',
@@ -59,31 +67,40 @@ export default function News() {
           Novinky
         </Typography>
       </Box>
-      <Box sx={{ width: '100%' }}>
-        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}></Box>
+      <Box
+        sx={{
+          width: '100%',
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+        }}
+      >
         <CustomTabPanel value={value} index={0}>
           {/* 1 */}
           <Box>
-            <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-              <Box>
-                <img
-                  src="/images/news2.jpg"
-                  alt="news"
-                  style={{ width: '100%', height: '240px' }}
-                ></img>
-              </Box>
-              <Box sx={{ p: '1em', height: '280px' }}>
-                <Typography>
-                  Hokejisti Dukly Trenčín zdolali v nedeľňajšom zápase 17. kola
-                  Tipos extraligy veľkého rivala HC Slovan Bratislava
-                  presvedčivo 5:1. Trenčania sa po štvrtom víťazstve za sebou
-                  posunuli v tabuľke na 8. miesto. &quot;Vojaci&quot; položili
-                  základ úspechu v prvej tretine dvoma strelenými gólmi v
-                  rozmedzí 76 sekúnd. V 22. minúte ešte znížil Brown, no Giľák,
-                  Conway a znovu Giľák spečatili cenný triumf.
-                </Typography>
-              </Box>
-            </Box>
+            <img
+              src="/images/news2.jpg"
+              alt="news"
+              style={{ width: '100%', height: 'auto' }}
+            ></img>
+          </Box>
+          <Box
+            sx={{
+              p: '1em',
+              display: 'flex',
+              flexDirection: 'column',
+              flex: 1,
+            }}
+          >
+            <Typography>
+              Hokejisti Dukly Trenčín zdolali v nedeľňajšom zápase 17. kola
+              Tipos extraligy veľkého rivala HC Slovan Bratislava presvedčivo
+              5:1. Trenčania sa po štvrtom víťazstve za sebou posunuli v tabuľke
+              na 8. miesto. &quot;Vojaci&quot; položili základ úspechu v prvej
+              tretine dvoma strelenými gólmi v rozmedzí 76 sekúnd. V 22. minúte
+              ešte znížil Brown, no Giľák, Conway a znovu Giľák spečatili cenný
+              triumf.
+            </Typography>
           </Box>
         </CustomTabPanel>
         <CustomTabPanel value={value} index={1}>
@@ -98,7 +115,7 @@ export default function News() {
                 ></img>
               </Box>
               <Box>
-                <Typography sx={{ p: '1em', height: '280px' }}>
+                <Typography sx={{ p: '1em' }}>
                   Hokejisti Zvolena v nedeľňajšom zápase 17. kola Tipos
                   extraligy podľahli na svojom ľade Nitre 5:7 a stratili druhú
                   priečku v tabuľke. Nepomohla im za stavu 0:3 ani výmena
@@ -122,7 +139,7 @@ export default function News() {
                 ></img>
               </Box>
               <Box>
-                <Typography sx={{ p: '1em', height: '280px' }}>
+                <Typography sx={{ p: '1em' }}>
                   Američan Todd Bjorkstrand sa stal novým trénerom hokejistov HK
                   Poprad. Na striedačke účastníka Tipos extraligy nahradil Čecha
                   Aleša Tottera, ktorý v tíme skončil vo štvrtok po vzájomnej
@@ -139,7 +156,7 @@ export default function News() {
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
-          sx={{ display: 'flex' }}
+          sx={{ position: 'absolute', bottom: 0, left: 0, right: 0 }}
         >
           <Tab
             sx={{

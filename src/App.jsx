@@ -37,7 +37,7 @@ function App() {
       <BrowserRouter>
         <GlobalProvider>
           <Navbar />
-          <Box sx={{ display: 'grid', gridTemplateColumns: '200px 87%' }}>
+          <Box sx={{ display: 'grid', gridTemplateColumns: '190px 1fr' }}>
             <Sidebar />
             <Routes>
               <Route path="/Home" element={<Home />} />

@@ -50,15 +50,15 @@ const LastGameOne = ({
             display: 'flex',
             justifyContent: 'flex-start',
             alignItems: 'center',
-            gap: '0.8em',
-            paddingLeft: '1.5em',
+            gap: '0.5em',
+            paddingLeft: '1em',
           }}
         >
           {icon &&
             React.createElement(icons[icon], {
-              style: { color: '#1976D2', fontSize: '28px' },
+              style: { color: '#1976D2', fontSize: '1.5rem' },
             })}
-          <Typography variant="body1" sx={{ fontSize: '20px' }}>
+          <Typography variant="body1" sx={{ fontSize: '1rem' }}>
             {name}
           </Typography>
         </Box>
@@ -68,10 +68,10 @@ const LastGameOne = ({
             display: 'flex',
             justifyContent: 'flex-start',
             alignItems: 'center',
-            paddingLeft: '3em',
+            paddingLeft: '2em',
           }}
         >
-          <Typography variant="body1" sx={{ fontSize: '20px' }}>
+          <Typography variant="body1" sx={{ fontSize: '1rem' }}>
             {number}
           </Typography>
         </Box>
@@ -82,15 +82,15 @@ const LastGameOne = ({
             justifyContent: 'flex-start',
             alignItems: 'center',
             gap: '0.2em',
-            paddingLeft: '4em',
+            paddingLeft: '3em',
           }}
         >
-          <Typography variant="body1" sx={{ fontSize: '20px' }}>
+          <Typography variant="body1" sx={{ fontSize: '1rem' }}>
             {numberDifference}
           </Typography>
           {iconDifference &&
             React.createElement(icons[iconDifference], {
-              style: { color: iconColor, fontSize: '20px' },
+              style: { color: iconColor, fontSize: '1rem' },
             })}
         </Box>
       </Box>

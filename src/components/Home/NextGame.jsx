@@ -28,7 +28,7 @@ const NextGame = () => {
             background: 'white',
             flex: '1',
             width: '100%',
-            gap: '2.3em',
+            gap: '1.5em',
             borderBottom: '1px solid #1976D2',
           }}
         >

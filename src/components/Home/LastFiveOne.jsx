@@ -27,12 +27,12 @@ const LastFiveOne = ({
           textAlign: 'center',
         }}
       >
-        <Typography variant="body1" sx={{ fontSize: '18px' }}>
+        <Typography variant="body1" >
           {date}
         </Typography>
       </Box>
-      <Box sx={{ width: '5%', textAlign: 'center', paddingLeft: '0.6em' }}>
-        <Typography variant="body1" sx={{ fontSize: '18px' }}>
+      <Box sx={{ width: '5%', textAlign: 'center', paddingLeft: '0.2em' }}>
+        <Typography variant="body1" >
           {place}
         </Typography>
       </Box>
@@ -42,13 +42,13 @@ const LastFiveOne = ({
           display: 'flex',
           justifyContent: 'flex-start',
           alignItems: 'center',
-          paddingLeft: '25px',
-          gap: '0.3em',
+          paddingLeft: '2em',
+          gap: '0.2em',
         }}
       >
         <Box
           sx={{
-            width: '32px',
+            width: '24px',
             height: 'auto',
             display: 'flex',
             justifyContent: 'center',
@@ -62,7 +62,7 @@ const LastFiveOne = ({
           ></img>
         </Box>
         <Box>
-          <Typography variant="body1" sx={{ fontSize: '18px' }}>
+          <Typography variant="body1">
             {name}
           </Typography>
         </Box>
@@ -77,11 +77,11 @@ const LastFiveOne = ({
           paddingLeft: '20px',
         }}
       >
-        <Typography variant="body1" sx={{ fontSize: '18px' }}>
+        <Typography variant="body1" >
           {homeScore}:{awayScore}
         </Typography>
         <FiberManualRecordIcon
-          sx={{ width: '12px', color: `${weWon ? 'green' : 'red'}` }}
+          sx={{ width: '8px', color: `${weWon ? 'green' : 'red'}` }}
         ></FiberManualRecordIcon>
       </Box>
     </Box>

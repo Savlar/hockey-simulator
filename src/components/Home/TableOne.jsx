@@ -18,11 +18,12 @@ const TableOne = ({
           display: 'flex',
           justifyContent: 'flex-end',
           alignItems: 'center',
-          paddingLeft: '0.5em',
-          width: '24px',
+          paddingLeft: '1.8em',
+          width: '16px',
+
         }}
       >
-        <Typography>{number}</Typography>
+        <Typography>{number}.</Typography>
       </Box>
       <Box
         sx={{
@@ -30,11 +31,12 @@ const TableOne = ({
           justifyContent: 'flex-start',
           alignItems: 'center',
           paddingLeft: '0.5em',
+          
         }}
       >
         <Box
           sx={{
-            width: '32px',
+            width: '28px',
             height: 'auto',
             display: 'flex',
             justifyContent: 'center',
@@ -54,7 +56,7 @@ const TableOne = ({
           justifyContent: 'flex-start',
           alignItems: 'center',
           paddingLeft: '0.2em',
-          width: '206px',
+          width: '180px',
         }}
       >
         <Typography>{name}</Typography>
@@ -62,7 +64,7 @@ const TableOne = ({
       <Box
         sx={{
           display: 'flex',
-          width: '32px',
+          width: '28px',
           justifyContent: 'flex-end',
           alignItems: 'center',
           paddingLeft: '0.8em',
@@ -73,7 +75,7 @@ const TableOne = ({
       <Box
         sx={{
           display: 'flex',
-          width: '32px',
+          width: '26px',
           justifyContent: 'flex-end',
           alignItems: 'center',
         }}
@@ -83,7 +85,7 @@ const TableOne = ({
       <Box
         sx={{
           display: 'flex',
-          width: '32px',
+          width: '26px',
           justifyContent: 'flex-end',
           alignItems: 'center',
         }}
@@ -93,7 +95,7 @@ const TableOne = ({
       <Box
         sx={{
           display: 'flex',
-          width: '32px',
+          width: '26px',
           justifyContent: 'flex-end',
           alignItems: 'center',
         }}
@@ -103,7 +105,7 @@ const TableOne = ({
       <Box
         sx={{
           display: 'flex',
-          width: '32px',
+          width: '26px',
           justifyContent: 'flex-end',
           alignItems: 'center',
         }}
@@ -113,7 +115,7 @@ const TableOne = ({
       <Box
         sx={{
           display: 'flex',
-          width: '32px',
+          width: '30px',
           justifyContent: 'flex-end',
           alignItems: 'center',
         }}

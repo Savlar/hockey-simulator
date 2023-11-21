@@ -8,6 +8,7 @@ const Table = () => {
       sx={{
         display: 'flex',
         flexDirection: 'column',
+        height:"630px"
       }}
     >
       <Box>
