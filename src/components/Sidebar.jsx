@@ -153,10 +153,7 @@ const Sidebar = () => {
           </List>
         </Collapse>
       </Link>
-      <Link
-        to="/Overview"
-        style={{ textDecoration: 'none', color: 'inherit' }}
-      >
+      <Link to="/Overview" style={{ textDecoration: 'none', color: 'inherit' }}>
         <Collapse in={openTactics} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
             <ListItemButton sx={{ pl: 4 }}>
@@ -169,13 +166,13 @@ const Sidebar = () => {
         to="/Formations"
         style={{ textDecoration: 'none', color: 'inherit' }}
       >
-      <Collapse in={openTactics} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText primary="Formácie" />
-          </ListItemButton>
-        </List>
-      </Collapse>
+        <Collapse in={openTactics} timeout="auto" unmountOnExit>
+          <List component="div" disablePadding>
+            <ListItemButton sx={{ pl: 4 }}>
+              <ListItemText primary="Formácie" />
+            </ListItemButton>
+          </List>
+        </Collapse>
       </Link>
       <Collapse in={openTactics} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
@@ -271,19 +268,21 @@ const Sidebar = () => {
         </List>
       </Collapse>
       {/* Klub */}
-      <List>
-        <ListItem disablePadding>
-          <ListItemButton component="a" href="#dresy">
-            <ListItemIcon>
-              <SportsHockeyIcon />
-            </ListItemIcon>
-            <ListItemText
-              primary="Klub
+      <Link to="/Club" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <List>
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#dresy">
+              <ListItemIcon>
+                <SportsHockeyIcon />
+              </ListItemIcon>
+              <ListItemText
+                primary="Klub
             "
-            />
-          </ListItemButton>
-        </ListItem>
-      </List>
+              />
+            </ListItemButton>
+          </ListItem>
+        </List>
+      </Link>
       {/* Návod */}
       <List>
         <ListItem disablePadding>

@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Skvelí fanúšikovia",
+    "icon": "AccessibilityIcon"
+  },
+  {
+    "id": 2,
+    "name": "Stabilné vedenie",
+    "icon": "PeopleIcon"
+  },
+  {
+    "id": 3,
+    "name": "Stabilný tréner",
+    "icon": "AssignmentIndIcon"
+  },
+  {
+    "id": 4,
+    "name": "Výchova mládeže",
+    "icon": "SchoolIcon"
+  },
+  {
+    "id": 5,
+    "name": "Dobré meno",
+    "icon": "ThumbUpAltIcon"
+  }
+]

@@ -10,6 +10,7 @@ import Facilities from './components/Facilities/Facilities';
 import { createContext, useState } from 'react';
 import Formations from './components/Players/Formations/Formations';
 import Overview from './components/Players/Overview/Overview';
+import Club from './components/Club/Club';
 
 export const GlobalContext = createContext();
 
@@ -45,6 +46,7 @@ function App() {
               <Route path="/Facilities" element={<Facilities />} />
               <Route path="/Formations" element={<Formations />} />
               <Route path="/Overview" element={<Overview />} />
+              <Route path="/Club" element={<Club />} />
               {/* DEFAULT */}
               <Route index element={<Home />} />
             </Routes>

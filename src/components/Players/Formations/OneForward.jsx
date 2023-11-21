@@ -16,16 +16,9 @@ const OneForward = ({
   playerType,
   attributes,
   age,
-  chemistry,
   playerPosition,
   factors,
-  properties,
-  shooting,
-  skating,
-  passing,
-  hands,
-  defense,
-  physical,
+
 }) => {
   const [isInfoModalOpen, setInfoModalOpen] = useState(false);
   const handleInfoClick = () => {
