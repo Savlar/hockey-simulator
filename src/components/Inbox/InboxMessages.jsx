@@ -247,6 +247,10 @@ export default function EnhancedTable() {
   const handleClick = (id) => {
     console.log(`id: ${id}`);
     setClickedRows((prevClickedRows) => [...prevClickedRows, id]);
+
+    const selectedRow = rows.find((row) => row.id === id);
+    setSelectedMessage(selectedRow);
+
     setOpen(true);
   };
 
@@ -266,6 +270,7 @@ export default function EnhancedTable() {
   };
 
   const handleClickBox = (event, id) => {
+    event.stopPropagation();
     const selectedIndex = selected.indexOf(id);
     let newSelected = [];
 
@@ -312,7 +317,7 @@ export default function EnhancedTable() {
     <Box sx={{ width: '100%' }}>
       <Paper sx={{ width: '100%', mb: 2 }}>
         <EnhancedTableToolbar numSelected={selected.length} />
-        <TableContainer sx={{height:"75vh"}}>
+        <TableContainer sx={{ height: '75vh' }}>
           <Table
             sx={{ minWidth: 750, background: '#cfe8fc' }}
             aria-labelledby="tableTitle"
@@ -404,7 +409,7 @@ export default function EnhancedTable() {
         </DialogTitle>
         <DialogContent>
           <Typography sx={{ paddingBottom: '1.5em' }}>
-            Vitajte v HK Nitra {selectedMessage?.name}
+            {selectedMessage?.name}
           </Typography>
           <Typography>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga autem
@@ -416,7 +421,7 @@ export default function EnhancedTable() {
             beatae rerum consequuntur adipisci distinctio qui sit dolores?
           </Typography>
           <Typography sx={{ paddingTop: '4em' }}>
-            Miroslav Kováčik - Prezident HK NITRA
+            {selectedMessage?.sender}
           </Typography>
         </DialogContent>
         <DialogActions>
